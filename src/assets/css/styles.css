@@ -1,0 +1,296 @@
+/*Importar fuentes customs*/
+
+@font-face {
+    font-family: 'yanone';
+    src: url('fonts/yanone.ttf');
+}
+
+@font-face {
+    font-family: 'finger';
+    src: url('fonts/finger.ttf');
+}
+
+
+/*Generales*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'yanone', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-image: url('../img/pattern.png');
+    background-attachment: fixed;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+
+/*Header*/
+
+header {
+    display: block;
+    width: 100%;
+    height: 102px;
+    background: rgba(53, 103, 164, 0.8);
+    position: fixed;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: block;
+    width: 38%;
+    height: inherit;
+    margin: 0px auto;
+}
+
+header li {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 88px;
+}
+
+header a {
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 300ms;
+}
+
+header a:hover,
+.actived {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/*LOGO*/
+
+.logo {
+    font-family: 'finger';
+    font-size: 60px;
+}
+
+.logo a {
+    transition: color 500ms, transform 500ms;
+}
+
+header .logo a:hover {
+    background: transparent;
+    color: #000000;
+    transform: scale(1.50, 1.50);
+}
+
+
+/*Contener principal*/
+
+#content {
+    min-height: 600px;
+    height: auto;
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    border-left: 1px solid #b7b7b7;
+    background: rgba(255, 255, 255, 0.7);
+    padding-top: 120px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*About*/
+
+.title {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.title h1 {
+    font-family: 'finger';
+    font-size: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.title h2 {
+    font-size: 25px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.about {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.about h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.about p {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+
+/*Form*/
+
+.container {
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.container .image {
+    float: left;
+    width: 49%;
+}
+
+.container .data {
+    float: left;
+    width: 49%;
+}
+
+.container h2 {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 50%;
+}
+
+form label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type='text'],
+form input[type='number'],
+form input[type='email'],
+form textarea {
+    width: 80%;
+    padding: 5px;
+}
+
+form button,
+form input[type='submit'],
+.buttonEdit,
+.buttonDelete {
+    display: block;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: rgba(53, 103, 164, 1);
+    border: rgba(13, 67, 133, 1);
+    cursor: pointer;
+}
+
+.buttonEdit,
+.buttonDelete {
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+form button:hover,
+form input[type='submit']:hover {
+    background-color: rgba(53, 103, 164, 0.8);
+    border: rgba(13, 67, 133, 1);
+}
+
+form input[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.formError {
+    color: red;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/*Message*/
+
+.message {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #eee;
+}
+
+.success {
+    background-color: green;
+    color: #ffffff;
+}
+
+.message a {
+    color: #ffffff;
+}
+
+.failed {
+    background: red;
+    color: #ffffff;
+}
+
+
+/*Pagina de proyectos*/
+
+.project {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.project .image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+}
+
+.project a {
+    text-decoration: none;
+    color: #000000;
+}

@@ -1,0 +1,11 @@
+.image {
+    float: none;
+}
+
+.image img {
+    width: 100px;
+}
+
+input[type='file'] {
+    display: block;
+}
